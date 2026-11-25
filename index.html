@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gasthaus zur Linde (Beispielseite)</title>
+<style>
+/* ===== Farben: hier ändern ===== */
+:root{--gruen:#27402f;--creme:#f7f1e5;--gold:#c08a2e;--text:#2b2620}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,sans-serif;background:var(--creme);color:var(--text);line-height:1.6}
+h1,h2,h3{font-family:Georgia,serif;line-height:1.2}
+.hinweis{background:var(--gold);color:#1d1508;text-align:center;font-size:.85rem;padding:6px 12px}
+nav{background:var(--gruen);display:flex;flex-wrap:wrap;justify-content:center;gap:4px 24px;padding:14px;position:sticky;top:0}
+nav a{color:var(--creme);text-decoration:none}
+nav a:hover{text-decoration:underline}
+header{background:linear-gradient(160deg,#35573f,#172a1e);color:var(--creme);text-align:center;padding:90px 20px}
+header h1{font-size:clamp(2.2rem,8vw,4rem);margin-bottom:12px}
+.button{display:inline-block;margin-top:28px;background:var(--gold);color:#1d1508;padding:12px 28px;border-radius:40px;text-decoration:none;font-weight:700}
+section{max-width:760px;margin:0 auto;padding:60px 20px;scroll-margin-top:60px}
+h2{color:var(--gruen);font-size:2rem;margin-bottom:20px;text-align:center}
+h3{margin:28px 0 8px;color:var(--gold)}
+ul{list-style:none}
+li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed #c9bda3}
+li span:last-child{white-space:nowrap}
+footer{background:var(--gruen);color:var(--creme);text-align:center;padding:30px 20px;font-size:.9rem}
+
+/* ===== Rustikaler Stil ===== */
+:root{--gruen:#2f4a2a;--braun:#4a2f1b;--creme:#efe2c4;--gold:#c9a15a;--text:#33240f}
+body{font-family:Georgia,"Times New Roman",serif;background:var(--creme)}
+.hinweis{background:var(--braun);color:var(--creme)}
+nav{background:var(--braun);border-bottom:4px double var(--gold);z-index:2}
+header{background:var(--gruen);border-bottom:10px solid var(--braun);padding:60px 16px}
+header h1{font-family:"Old English Text MT","UnifrakturMaguntia",Georgia,serif;color:#f3e6c6;text-shadow:2px 3px 0 #1b2a17}
+.button{background:var(--gold);border:3px double var(--braun);border-radius:4px}
+section{background:#f6ecd4;border:6px double var(--braun);margin:36px auto;width:calc(100% - 24px);padding:36px 18px}
+h2{color:var(--braun)}
+h2::after{content:"❦";display:block;color:var(--gruen);font-size:1.4rem}
+h3{color:var(--gruen);font-style:italic}
+li{border-bottom:1px dotted var(--braun)}
+footer{background:var(--braun);border-top:4px double var(--gold)}
+</style>
+</head>
+<body>
+<div class="hinweis">Beispielseite – dieses Gasthaus ist erfunden.</div>
+<nav><a href="#ueber">Über uns</a><a href="#karte">Speisekarte</a><a href="#zeiten">Öffnungszeiten</a><a href="#kontakt">Kontakt</a></nav>
+
+<header>
+  <h1>Gasthaus zur Linde</h1>
+  <p>Ehrliche österreichische Küche, gemütlich serviert.</p>
+  <a class="button" href="#kontakt">Tisch reservieren</a>
+</header>
+
+<section id="ueber">
+  <h2>Über uns</h2>
+  <p>Bei uns wird frisch gekocht, so wie man es von daheim kennt. Ob Mittagessen, Familienfeier oder ein Achterl am Abend: In unserer Stube und im Gastgarten unter der Linde ist Platz für alle.</p>
+</section>
+
+<section id="karte">
+  <h2>Speisekarte</h2>
+  <h3>Suppen</h3>
+  <ul>
+    <li><span>Frittatensuppe</span><span>€ 4,90</span></li>
+    <li><span>Knoblauchcremesuppe</span><span>€ 5,50</span></li>
+  </ul>
+  <h3>Hauptspeisen</h3>
+  <ul>
+    <li><span>Wiener Schnitzel vom Schwein mit Erdäpfelsalat</span><span>€ 15,90</span></li>
+    <li><span>Zwiebelrostbraten mit Braterdäpfeln</span><span>€ 22,50</span></li>
+    <li><span>Käsespätzle mit grünem Salat</span><span>€ 13,50</span></li>
+  </ul>
+  <h3>Nachspeisen</h3>
+  <ul>
+    <li><span>Apfelstrudel mit Schlagobers</span><span>€ 5,90</span></li>
+    <li><span>Kaiserschmarrn mit Zwetschkenröster</span><span>€ 11,90</span></li>
+  </ul>
+</section>
+
+<section id="zeiten">
+  <h2>Öffnungszeiten</h2>
+  <ul>
+    <li><span>Montag und Dienstag</span><span>Ruhetag</span></li>
+    <li><span>Mittwoch bis Samstag</span><span>11–22 Uhr</span></li>
+    <li><span>Sonntag</span><span>11–16 Uhr</span></li>
+  </ul>
+</section>
+
+<section id="kontakt" style="text-align:center">
+  <h2>Kontakt</h2>
+  <p>Musterstraße 1, 1234 Musterdorf<br>Telefon: 01234 / 000 000<br>E-Mail: info@example.com</p>
+</section>
+
+<footer>© 2026 Gasthaus zur Linde · Beispielseite</footer>
+</body>
+</html>
